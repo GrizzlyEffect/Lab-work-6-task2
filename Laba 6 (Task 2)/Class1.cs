@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace Laba_6__Task_2_
 {
-    internal class Class1
+    public class Class1
     {
-        interface IShape
+        public interface IShape
         {
             double GetArea();
         }
-
         public class Parallelogram : IShape
         {
             double A;
             double H;
-
             public Parallelogram(double a, double h)
             {
                 A = a;
@@ -42,12 +40,10 @@ namespace Laba_6__Task_2_
                 D = d;
                 H = h;
             }
-
-            public  double GetArea()
+            public double GetArea()
             {
                 return 0.5 * (C + D) * H;
             }
         }
-
     }
 }
